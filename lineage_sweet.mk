@@ -21,3 +21,6 @@ PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Custom Gapps
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
